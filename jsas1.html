@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function add(){
+            var num1=document.getElementById('number1').value;
+            var num2=document.getElementById('number2').value;
+            var result=parseInt(num1)+parseInt(num2);
+            document.getElementById('lblresult').innerHTML=result;alert("Your result is"+result);
+        }
+        function addNumber(num1,num2){
+            return num1+num2;
+        }
+        function subtract(){
+            var num1=document.getElementById('number1').value;
+            var num2=document.getElementById('number2').value;
+            var result=parseInt(num1)-parseInt(num2);
+            document.getElementById('lblresult').innerHTML=result;alert("Your result is"+result);
+        }
+        function subtractNumber(num1,num2){
+            return num1-num2;
+        }
+        function multiple(){
+            var num1=document.getElementById('number1').value;
+            var num2=document.getElementById('number2').value;
+            var result=parseInt(num1)*parseInt(num2);
+            document.getElementById('lblresult').innerHTML=result;alert("Your result is"+result);
+        }
+        function multipleNumber(num1,num2){
+            return num1*num2;
+        }
+        function division(){
+            var num1=document.getElementById('number1').value;
+            var num2=document.getElementById('number2').value;
+            var result=parseInt(num1)/parseInt(num2);
+            document.getElementById('lblresult').innerHTML=result;alert("Your result is"+result);
+        }
+        function divisionNumber(num1,num2){
+            return num1/num2;
+        }
+    </script>
+    <body>
+        <label>number1:</label><br>
+        <input type="text"id="number1"/><br>
+        <label>number2:</label><br>
+        <input type="text"id="number2"/><br>
+        <h3 id="lblresult"></h3>
+        <button onclick="add()">+</button>
+        <button onclick="subtract()">-</button>
+        <button onclick="multiple()">*</button>
+        <button onclick="division()">/</button>
+        </body>
+</html>
